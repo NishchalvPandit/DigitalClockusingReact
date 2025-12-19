@@ -1,11 +1,14 @@
+import Clock from "./clock";
 import { useState } from "react";
-import DigitalClock from "./DigitalClock";
 
 function App() {
   return (
     <div>
-      <h1>Digital Clock</h1>;
-      <DigitalClock />;
+      Digital Clock
+      <select>
+        <option value={"red"}></option>
+      </select>
+      <Clock />
     </div>
   );
 }
