@@ -1,0 +1,73 @@
+/* Basic page reset and styling to look clean and professional */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #282c34;
+    /* Dark consistent background */
+    color: #ffffff;
+}
+
+/* Container to center the clock and controls on the screen */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 20px;
+    font-size: 24px;
+    /* Styles the "Digital Clock" text */
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Styling the dropdown menu */
+select {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background-color: #3b4049;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+select:hover {
+    background-color: #4a505b;
+}
+
+/* The actual clock styling */
+.clock-display {
+    background-color: #0d0d0d;
+    /* Deep black for the display background */
+    padding: 30px 60px;
+    border-radius: 15px;
+    /* Rounded corners */
+
+    /* A mix of shadows to give it depth and realism (outer shadow + inner bevel) */
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.5),
+        inset 0 2px 5px rgba(255, 255, 255, 0.1);
+
+    border: 5px solid #333;
+    /* Frame around the clock */
+
+    /* Monospace font gives it that "digital" look */
+    font-family: 'Courier New', Courier, monospace;
+    min-width: 300px;
+    text-align: center;
+}
+
+/* The Time Text */
+.clock-display h1 {
+    margin: 0;
+    font-size: 5rem;
+    /* Large text */
+    font-weight: normal;
+
+    /* Adding a subtle glow effect using the current text color */
+    text-shadow: 0 0 15px currentColor;
+}

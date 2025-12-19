@@ -1,7 +1,8 @@
-import { useEffect, useState, useSyncExternalStore } from "react";
+import { useEffect, useState } from "react";
 
-function Clock() {
+function Clock({ color }) {
   const [time, setTime] = useState(0);
+
 
   useEffect(() => {
     setInterval(() => {
@@ -9,7 +10,7 @@ function Clock() {
     }, 1000);
   }, []);
   return (
-    <div>
+    <div className="clock-display" style={{ color: color }}>
       <h1>{time}</h1>
     </div>
   );
